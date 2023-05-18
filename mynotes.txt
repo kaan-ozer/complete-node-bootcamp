@@ -1,0 +1,32 @@
+> node
+- now we can write any js code under this command.
+- this will then open up the Node REPL -> read-eval-print-loop
+> .exit
+> ctrl + k -> clear
+> ctrl + d -> exit
+> 2x TAB -> all global variables are available in node
+>_ -> previous result
+> String. + TAB -> all methods and properties
+> node index.js
+
+>all kinds of additional functionality are stored in a module.
+-eg. in the case for reading files, that is inside the fS module.
+
+-sync stands for synchronous
+-to read a file and then, save it's content into a variable. -> so-called synchronous
+-each statement is basically processed one after another, line by line.
+-each line blocks the exucition of the rest of the code. it is also called blocking code 
+
+- thread is where our code is actually executed in a machine's processor
+-whenever users are interacting with the application the code that is run for each user
+ will be executed all in the same thread at the same place in the computer running the application
+
+ function(err,data1){
+    has its own this keyword
+ }
+
+ () => {it has its parent's this keyword}
+
+ > API is a service from which we can request some data
+ > __dirname is where the current file is located
+ > . is where the script is running (require function is an exception to this point)
